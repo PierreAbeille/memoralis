@@ -56,7 +56,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center py-8 px-4 relative parchment-background">
       {/* Title with centered alignment */}
       <div className="w-full max-w-2xl flex justify-center mb-12 relative z-20">
-        <h1 className={`${jacquard.className} text-9xl text-text-100`}>
+        <h1 className={`${jacquard.className} md:text-9xl text-7xl text-text-100`}>
           Memoralis
         </h1>
       </div>
