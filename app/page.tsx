@@ -56,13 +56,15 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center py-8 px-4 relative parchment-background">
       {/* Title with centered alignment */}
       <div className="w-full max-w-2xl flex justify-center mb-12 relative z-20">
-        <h1 className={`${jacquard.className} md:text-9xl text-7xl text-text-100`}>
+        <h1
+          className={`${jacquard.className} md:text-9xl text-7xl text-text-100`}
+        >
           Memoralis
         </h1>
       </div>
 
       {/* Original text display */}
-      <div className="w-full max-w-2xl bg-background-100 rounded-xl shadow-lg p-6 mb-8 relative z-20">
+      <div className="w-full max-w-2xl border-4 border-amber-900/40 bg-background-100 rounded-xl shadow-lg p-6 mb-8 relative z-20">
         <textarea
           className="w-full min-h-[120px] p-3 text-text-200 bg-background-100 border-0 focus:outline-none resize-none "
           value={text}
@@ -91,7 +93,7 @@ export default function Home() {
       </div>
 
       {/* Masked text display */}
-      <div className="w-full max-w-2xl bg-background-100 rounded-xl shadow-lg p-6 mb-6 relative z-20">
+      <div className="w-full max-w-2xl border-4 border-amber-900/40 bg-background-100 rounded-xl shadow-lg p-6 mb-6 relative z-20">
         <div
           className="text-text-200 min-h-[200px] "
           dangerouslySetInnerHTML={{ __html: maskedText }}
